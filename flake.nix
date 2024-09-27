@@ -15,7 +15,7 @@
         "aarch64-darwin"
       ];
 
-      imports = [ ];
+      imports = [ ./hosts ];
     };
 
   inputs = {
@@ -46,5 +46,7 @@
 
     lix-module.url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.0.tar.gz";
     lix-module.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
   };
 }
