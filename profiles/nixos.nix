@@ -5,13 +5,7 @@
 {
   imports = [
     ./common.nix
-    ../users/wsl
     ../modules/vim
     inputs.nixvim.nixosModules.nixvim
   ];
-
-  wsl = {
-    enable = true;
-    defaultUser = "nixos";
-  };
 }
