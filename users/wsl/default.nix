@@ -35,6 +35,7 @@ in
       stateVersion = "23.05";
     };
     imports = [
+      ../../home
     ];
   };
 }
