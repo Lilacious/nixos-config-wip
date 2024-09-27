@@ -15,6 +15,7 @@ in
 
         inputs.nixos-wsl.nixosModules.default
         {
+          networking.hostName = "wsl";
           nixpkgs.hostPlatform = arch;
           system.stateVersion = "24.05";
         }
