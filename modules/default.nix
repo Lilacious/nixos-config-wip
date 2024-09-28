@@ -13,6 +13,7 @@ with lib;
 
   imports = [
     ./desktop
+    ./programs
     ./services
   ];
 }
