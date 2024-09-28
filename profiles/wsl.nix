@@ -6,7 +6,7 @@
   imports = [
     ./common.nix
     ../users/wsl
-    ../modules/vim
+    ../modules/core/vim
     inputs.nixvim.nixosModules.nixvim
   ];
 

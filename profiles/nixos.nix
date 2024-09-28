@@ -5,7 +5,7 @@
 {
   imports = [
     ./common.nix
-    ../modules/vim
+    ../modules/core/vim
     inputs.nixvim.nixosModules.nixvim
   ];
 }

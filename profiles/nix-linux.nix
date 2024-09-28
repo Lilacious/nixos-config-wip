@@ -6,6 +6,6 @@
 {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
-    ../modules/vim
+    ../modules/core/vim
   ];
 }
