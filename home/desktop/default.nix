@@ -43,6 +43,7 @@ in
 
   imports = [
     ./gnome.nix
+    ./theme.nix
   ];
 
   config = {
