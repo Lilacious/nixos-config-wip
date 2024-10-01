@@ -11,6 +11,7 @@ in
 {
   imports = [
     ./display-manager.nix
+    ./gnome.nix
     ./plasma.nix
   ];
 
