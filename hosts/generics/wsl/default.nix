@@ -18,11 +18,6 @@ in
           networking.hostName = "wsl";
           nixpkgs.hostPlatform = arch;
           system.stateVersion = "24.05";
-          myModules.nixvim.languages = {
-            python = true;
-            php = true;
-            sql = true;
-          };
         }
       ];
     };
