@@ -12,6 +12,8 @@ in
     python = mkEnableOption "Python lsp & cmp";
     rust = mkEnableOption "Rust lsp & cmp";
     markdown = mkEnableOption "Markdown lsp & cmp";
+    php = mkEnableOption "PHP lsp & cmp";
+    sql = mkEnableOption "SQL lsp & cmp";
   };
 
   config = {
@@ -25,7 +27,7 @@ in
             # Nix
             nil-ls = {
               enable = cfg.nix;
-              settings.nix.flake.autoArchive = mkDefault false;
+              settings.nix.flake.autoArchive = mkDefault true;
             };
             # C/C++
             clangd.enable = cfg.c;
@@ -35,6 +37,10 @@ in
             rust-analyzer.enable = cfg.rust;
             # Markdown
             marksman.enable = cfg.markdown;
+            # PHP
+            phpactor.enable = cfg.php;
+            # SQL
+            sqls.enable = cfg.sql;
           };
         };
 
