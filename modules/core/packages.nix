@@ -47,6 +47,7 @@
     statix # Lints and suggestions for nix-lang
     nixpkgs-review # review nixpkgs pr
     nix-init # package generation
+    sops # For sops-nix
 
     ## Other
     fastfetch # Sys info fetcher
