@@ -53,7 +53,10 @@ in
     programs.firefox.enable = true;
 
     # Enable audio
-    myModules.services.audio.enable = true;
+    myModules = {
+      other.fonts.enable = true;
+      services.audio.enable = true;
+    };
 
     services.xserver = {
       # Disable xserver by default
