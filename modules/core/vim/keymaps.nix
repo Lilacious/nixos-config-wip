@@ -25,6 +25,10 @@
         key = "<Esc>";
         action = "<cmd>nohlsearch<CR>";
       }
+      {
+        key = "<leader>vc";
+        action = ":VimtexCompile<CR>";
+      }
     ];
   };
 }

@@ -14,6 +14,7 @@ in
     markdown = mkEnableOption "Markdown lsp & cmp";
     php = mkEnableOption "PHP lsp & cmp";
     sql = mkEnableOption "SQL lsp & cmp";
+    tex = mkEnableOption "LaTeX lsp & cmp";
   };
 
   config = {
@@ -41,6 +42,10 @@ in
             phpactor.enable = cfg.php;
             # SQL
             sqls.enable = cfg.sql;
+            # LaTeX
+            texlab ={
+              enable = cfg.tex;
+            };
           };
         };
 
@@ -73,14 +78,19 @@ in
           };
         };
 
+        # LaTeX filetype plugin
+        vimtex = {
+          enable = true;
+          texlivePackage = null;
+        };
         # Completion source for lsp
-        #cmp-nvim-lsp.enable = true;
+        cmp-nvim-lsp.enable = true;
         # Snippet Engine & its associated cmp source
-        #luasnip.enable = true;
+        luasnip.enable = true;
         # Useful status updates for LSP.
         fidget.enable = true;
         # Completion source for filesystem path
-        #cmp-path.enable = true;
+        cmp-path.enable = true;
         # Premade snippets for various programming languages
         friendly-snippets.enable = true;
       };

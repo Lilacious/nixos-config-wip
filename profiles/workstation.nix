@@ -53,5 +53,10 @@
         ];
       };
     };
+    nixvim.languages = {
+      python = true;
+      markdown = true;
+      tex = true;
+    };
   };
 }
