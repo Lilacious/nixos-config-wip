@@ -27,13 +27,15 @@ in
   config = mkIf cfg.enable {
     environment.systemPackages =
       with pkgs;
-      mkIf cfg.emulators.enable [
-        melonDS # DS Emulator
-        lime3ds # 3DS Emulator
-      ]
-      ++ mkIf cfg.heroic.enable [
-        heroic
-      ];
+      (mkMerge [
+        (mkIf cfg.emulators.enable [
+          melonDS # DS Emulator
+          lime3ds # 3DS Emulator
+        ])
+        (mkIf cfg.heroic.enable [
+          heroic
+        ])
+      ]);
 
     programs.steam.enable = cfg.steam.enable;
   };

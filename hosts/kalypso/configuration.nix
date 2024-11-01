@@ -67,6 +67,7 @@
     };
 
     programs = {
+      gaming.enable = true;
       virt-manager = {
         enable = true;
         enableOSX = true;
