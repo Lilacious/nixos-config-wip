@@ -25,7 +25,7 @@ in
           enable = true;
           servers = {
             # Nix
-            nil-ls = {
+            nil_ls = {
               enable = cfg.nix;
               settings.nix.flake.autoArchive = mkDefault true;
             };
@@ -34,7 +34,7 @@ in
             # Python
             pyright.enable = cfg.python;
             # Rust
-            rust-analyzer.enable = cfg.rust;
+            rust_analyzer.enable = cfg.rust;
             # Markdown
             marksman.enable = cfg.markdown;
             # PHP
