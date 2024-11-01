@@ -10,10 +10,7 @@ in
 {
   options = {
     myModules.services.audio = {
-      enable = mkOption {
-        type = types.bool;
-        default = false;
-      };
+      enable = mkEnableOption "audio settings";
     };
   };
   config = mkIf cfg.enable {

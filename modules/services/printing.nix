@@ -10,10 +10,7 @@ in
 {
   options = {
     myModules.services.printing = {
-      enable = mkOption {
-        type = types.bool;
-        default = false;
-      };
+      enable = mkEnableOption "printing service";
     };
   };
   config = mkIf cfg.enable {
