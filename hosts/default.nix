@@ -3,5 +3,6 @@
     ./generics
 
     ./kalypso
+    ./penelope
   ];
 }
