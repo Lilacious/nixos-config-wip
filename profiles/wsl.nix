@@ -4,10 +4,11 @@
 }:
 {
   imports = [
-    ./common.nix
-    ../users/wsl
+    ../modules/core
     ../modules/core/vim
     inputs.nixvim.nixosModules.nixvim
+
+    ../users/wsl
   ];
 
   wsl = {

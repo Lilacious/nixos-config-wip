@@ -4,7 +4,7 @@
 }:
 {
   imports = [
-    ./common.nix
+    ../modules/core
     ../modules/core/vim
     inputs.nixvim.nixDarwinModules.nixvim
   ];
