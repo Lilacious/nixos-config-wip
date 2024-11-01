@@ -19,7 +19,10 @@ in
   };
 
   config = mkIf cfg.plasma.enable {
-    myModules.desktop.desktopEnvironment.enable = true;
+    myModules = {
+      desktop.desktopEnvironment.enable = true;
+      other.inputMethod.qt = mkDefault true;
+    };
 
     services.desktopManager.plasma6.enable = true;
 
