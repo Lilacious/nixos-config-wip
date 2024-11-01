@@ -21,6 +21,4 @@
 
     ../users/yunix
   ];
-
-  myModules.programs.desktop.enable = true;
 }
