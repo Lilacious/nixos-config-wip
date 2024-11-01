@@ -20,7 +20,7 @@ in
     programs = {
       eza = {
         enable = true;
-        icons = true;
+        icons = "auto";
         extraOptions = [
           "--group"
           "--group-directories-first"
