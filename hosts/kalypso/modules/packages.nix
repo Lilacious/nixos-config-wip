@@ -15,7 +15,7 @@
     # texlive.combined.scheme-full
 
     ## Development
-    (python3.withPackages (ps: with ps; [ tkinter ]))
+    # (python3.withPackages (ps: with ps; [ tkinter ]))
     # gcc
   ];
 }

@@ -1,5 +1,5 @@
 {
   imports = [
-    ./packages.nix
+    #./packages.nix
   ];
 }

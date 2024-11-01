@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
   system.stateVersion = "22.05";
   networking.hostName = "penelope";
@@ -31,17 +30,11 @@
 
     services = {
       printing.enable = true;
+      syncthing.enable = true;
     };
 
     programs = {
       virt-manager.enable = true;
-      vscode = {
-        enable = true;
-        extensions = with pkgs.vscode-extensions; [
-          james-yu.latex-workshop
-          ms-python.python
-        ];
-      };
     };
   };
 }

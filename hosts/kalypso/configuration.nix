@@ -1,6 +1,5 @@
 {
   config,
-  pkgs,
   ...
 }:
 {
@@ -71,14 +70,6 @@
       virt-manager = {
         enable = true;
         enableOSX = true;
-      };
-      vscode = {
-        enable = true;
-        extensions = with pkgs.vscode-extensions; [
-          ms-python.python
-          rust-lang.rust-analyzer
-          tamasfe.even-better-toml
-        ];
       };
     };
   };
