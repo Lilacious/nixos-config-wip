@@ -55,6 +55,7 @@ in
     # Enable audio
     myModules = {
       other.fonts.enable = true;
+      programs.desktop.enable = true;
       services.audio.enable = true;
     };
 

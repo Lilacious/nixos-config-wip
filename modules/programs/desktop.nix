@@ -11,9 +11,7 @@ in
 {
   options = {
     myModules.programs.desktop = {
-      enable = mkEnableOption "default desktop applications" // {
-        default = config.myModules.desktop.enable;
-      };
+      enable = mkEnableOption "default desktop applications";
     };
   };
   config = mkIf cfg.enable {
