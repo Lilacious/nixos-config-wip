@@ -16,7 +16,6 @@
       enable = true;
       efiSupport = true;
       device = "nodev";
-      useOSProber = true;
     };
   };
 
@@ -61,6 +60,10 @@
       printing.enable = true;
       ## Enable syncthing
       syncthing.enable = true;
+    };
+
+    other = {
+      dualboot.enable = true;
     };
 
     programs = {
