@@ -179,7 +179,7 @@ in
           blink_timeout = 0;
           unfocused_hollow = true;
         };
-        live_config_reload = false;
+        general.live_config_reload = false;
       };
     };
   };
