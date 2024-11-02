@@ -49,6 +49,7 @@ in
   config = {
     myHome.programs = {
       alacritty.enable = true;
+      direnv.enable = true;
     };
   };
 }
