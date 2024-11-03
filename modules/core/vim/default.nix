@@ -12,7 +12,7 @@ with lib;
   ];
 
   programs.nixvim = mkMerge [
-    ({
+    {
       enable = true;
       viAlias = true;
       vimAlias = true;
@@ -22,7 +22,7 @@ with lib;
         mapleader = " ";
         maplocalleader = " ";
       };
-    })
+    }
     (mkIf pkgs.stdenv.isLinux {
       defaultEditor = true;
     })

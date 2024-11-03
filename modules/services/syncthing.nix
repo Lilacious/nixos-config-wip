@@ -6,7 +6,7 @@
 with lib;
 let
   cfg = config.myModules.services.syncthing;
-  user = cfg.user;
+  inherit (cfg) user;
 in
 {
   options = {

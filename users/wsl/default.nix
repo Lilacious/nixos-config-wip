@@ -7,7 +7,7 @@
 }:
 let
   user = "nixos";
-  home = config.users.users.${user}.home;
+  inherit (config.users.users.${user}) home;
 in
 {
   imports = [
