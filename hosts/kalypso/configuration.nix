@@ -51,7 +51,7 @@
     ## Enable desktop environment
     desktop = {
       gnome.enable = true;
-      plasma.enable = true;
+      plasma.enable = false;
     };
 
     services = {
