@@ -17,7 +17,6 @@ in
         ./modules
         ../../profiles/workstation.nix
 
-        inputs.lix-module.nixosModules.default
         {
           ## Custom aliases for penelope
           home-manager.users.yunix.home.shellAliases = {
