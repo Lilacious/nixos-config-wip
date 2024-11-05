@@ -95,7 +95,7 @@ in
           toggle-maximized = [ "<Super>m" ];
           toggle-fullscreen = [ "<Super>f" ];
           close = [
-            "<Super>w"
+            "<Super>q"
             "<Alt>F4"
           ];
           switch-applications = [ ];
