@@ -14,6 +14,8 @@
       device = "nodev";
     };
   };
+  ## Power/Battery
+  powerManagement.powertop.enable = true;
   ## Enable networking
   networking.networkmanager.enable = true;
   # Fix wg-quick issues
