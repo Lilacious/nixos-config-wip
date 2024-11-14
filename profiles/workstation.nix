@@ -24,6 +24,9 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    # Remote desktop
+    parsec-bin
+
     ## Development
     (python3.withPackages (
       ps: with ps; [
