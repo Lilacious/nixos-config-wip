@@ -44,7 +44,7 @@
     authentik.inputs.nixpkgs.follows = "nixpkgs";
     authentik.inputs.flake-parts.follows = "flake-parts";
 
-    lix-module.url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-1.tar.gz";
+    lix-module.url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
     lix-module.inputs.nixpkgs.follows = "nixpkgs";
 
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
