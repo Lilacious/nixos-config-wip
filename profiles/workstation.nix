@@ -46,6 +46,10 @@
 
   myModules = {
     programs = {
+      office = {
+        enable = true;
+        spellCheck.enable = true;
+      };
       vscode = {
         enable = true;
         extensions = with pkgs.vscode-extensions; [
