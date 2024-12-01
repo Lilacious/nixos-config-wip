@@ -19,16 +19,12 @@ in
     fonts = {
       enableDefaultPackages = true;
       packages = with pkgs; [
-        hack-font
-        roboto
         noto-fonts-cjk-serif
         noto-fonts-cjk-sans
-        (nerdfonts.override {
-          fonts = [
-            "FiraCode"
-            "Agave"
-          ];
-        })
+        nerd-fonts.agave
+        nerd-fonts.arimo
+        nerd-fonts.fira-code
+        nerd-fonts.inconsolata
       ];
 
       fontconfig = {
@@ -36,7 +32,7 @@ in
         defaultFonts = {
           serif = [
             "Agave Nerd Font"
-            "Fira Code"
+            "FiraCode Nerd Font"
             "DejaVu Serif"
             "Noto Serif CJK JP"
             "Noto Serif CJK SC"
@@ -47,7 +43,7 @@ in
             "Noto Color Emoji"
           ];
           sansSerif = [
-            "Roboto Regular"
+            "Arimo Nerd Font"
             "DejaVu Sans"
             "Noto Sans CJK JP"
             "Noto Sans CJK SC"
@@ -55,7 +51,7 @@ in
             "Noto Sans CJK KR"
           ];
           monospace = [
-            "Hack"
+            "Inconsolata Nerd Font"
             "DejaVu Sans Mono"
           ];
         };
