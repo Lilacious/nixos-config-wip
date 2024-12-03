@@ -41,12 +41,6 @@
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
-    nixos-mailserver.url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
-
-    authentik.url = "github:nix-community/authentik-nix";
-    authentik.inputs.nixpkgs.follows = "nixpkgs";
-    authentik.inputs.flake-parts.follows = "flake-parts";
-
     lix-module.url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
     lix-module.inputs.nixpkgs.follows = "nixpkgs";
 
