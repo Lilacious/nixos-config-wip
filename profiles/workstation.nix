@@ -7,7 +7,6 @@
   imports = [
     ./nixos.nix
     ../modules
-    ../secrets
 
     inputs.home-manager.nixosModules.home-manager
     {
