@@ -15,7 +15,10 @@
         "aarch64-darwin"
       ];
 
-      imports = [ ./hosts ];
+      imports = [ 
+        ./hosts
+        ./profiles
+      ];
     };
 
   inputs = {
