@@ -1,10 +1,12 @@
 {
   lib,
+  config,
   osConfig,
   ...
 }:
 with lib;
 let
+  cfg = config.myHome.desktop;
   osCfg = osConfig.myModules.desktop;
 in
 {
@@ -46,7 +48,7 @@ in
     ./theme.nix
   ];
 
-  config = {
+  config = mkIf cfg.enable {
     myHome.programs = {
       alacritty.enable = true;
       direnv.enable = true;
