@@ -43,7 +43,7 @@ in
             # SQL
             sqls.enable = cfg.sql;
             # LaTeX
-            texlab ={
+            texlab = {
               enable = cfg.tex;
             };
           };
