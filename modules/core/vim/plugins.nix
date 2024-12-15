@@ -23,7 +23,7 @@
       # Indent guides for Neovim
       indent-blankline.enable = true;
       # Neovim colorizer
-      nvim-colorizer.enable = true;
+      colorizer.enable = true;
       # Useful plugin to show you pending keybinds
       which-key = {
         enable = true;
