@@ -26,6 +26,9 @@
     # Remote desktop
     parsec-bin
 
+    # UML
+    libsForQt5.umbrello
+
     ## Development
     (python3.withPackages (
       ps: with ps; [
