@@ -33,7 +33,6 @@ in
       spotify
       parsec-bin # remote desktop client
       obs-studio
-      obsidian # note taking
       jellyfin-media-player
     ];
   };
