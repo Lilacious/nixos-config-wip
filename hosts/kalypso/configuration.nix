@@ -50,8 +50,8 @@
   myModules = {
     ## Enable desktop environment
     desktop = {
-      gnome.enable = true;
-      plasma.enable = false;
+      gnome.enable = false;
+      plasma.enable = true;
     };
 
     services = {

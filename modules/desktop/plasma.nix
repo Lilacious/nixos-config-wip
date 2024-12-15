@@ -38,12 +38,9 @@ in
       systemPackages = with pkgs; [
         (catppuccin-kde.override {
           flavour = [ "mocha" ];
-          accents = [ "pink" ];
+          accents = [ "mauve" ];
           winDecStyles = [ "modern" ];
         })
-        catppuccin-cursors.mochaPink
-        papirus-icon-theme
-        #xwaylandvideobridge
       ];
     };
   };
