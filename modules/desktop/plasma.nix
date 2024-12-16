@@ -28,12 +28,12 @@ in
 
     environment = {
       plasma6.excludePackages = with pkgs.kdePackages; [
-        elisa
-        kate
-        khelpcenter
-        okular
-        oxygen
-        plasma-browser-integration
+        konsole # terminal
+        elisa # music player
+        kate # text editor
+        khelpcenter # kde documentation
+        okular # document viewer
+        krdp # rdp application
       ];
       systemPackages = with pkgs; [
         (catppuccin-kde.override {
