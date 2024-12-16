@@ -1,3 +1,4 @@
+# For home config see nix-config/home/desktop/plasma.nix
 {
   config,
   lib,
