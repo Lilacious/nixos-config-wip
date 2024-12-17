@@ -10,6 +10,7 @@ with lib;
 let
   cfg = config.myHome.desktop.plasma;
   osCfg = osConfig.myModules.desktop.plasma;
+  mode = config.programs.plasma.kwin.nightLight.mode;
 in
 {
   options = {
@@ -30,8 +31,32 @@ in
       plasma = {
         enable = true;
 
+        kwin = {
+          nightLight = {
+            enable = true;
+            mode = "location";
+            # mode capitalized by option
+            location = mkIf (mode == "Location") { 
+              # Frankfurt
+              latitude = "50.110556";
+              longitude = "8.682222";
+            };
+            temperature = {
+              day = null;
+              night = 3000;
+            };
+          };
+        };
+
         workspace = {
           clickItemTo = "select";
+          enableMiddleClickPaste = false;
+          
+          lookAndFeel = null;
+          colorScheme = "CatppuccinMochaMauve";
+          theme = "default";
+          iconTheme = "WhiteSur";
+          cursor.theme = "WhiteSur-cursors";
         };
 
         shortcuts = {
@@ -57,6 +82,13 @@ in
               "Battery"
               "Meta+P"
             ];
+          };
+        };
+
+        configFile = {
+          kwinrc = {
+            # Disable hot corner
+            ElectricBorders.TopLeft = "";
           };
         };
       };
