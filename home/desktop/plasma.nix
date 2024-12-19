@@ -36,7 +36,7 @@ in
             enable = true;
             mode = "location";
             # mode capitalized by option
-            location = mkIf (mode == "Location") { 
+            location = mkIf (mode == "Location") {
               # Frankfurt
               latitude = "50.110556";
               longitude = "8.682222";
@@ -51,7 +51,7 @@ in
         workspace = {
           clickItemTo = "select";
           enableMiddleClickPaste = false;
-          
+
           lookAndFeel = null;
           colorScheme = "CatppuccinMochaMauve";
           theme = "default";

@@ -11,12 +11,12 @@ in
   config = mkIf cfg.enable {
     services = {
       /*
-      xserver = {
-        enable = true;
-        displayManager = {
-          gdm.enable = mkDefault true;
+        xserver = {
+          enable = true;
+          displayManager = {
+            gdm.enable = mkDefault true;
+          };
         };
-      };
       */
       # displayManager.defaultSession = "gnome";
       displayManager = {
