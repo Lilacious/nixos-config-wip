@@ -11,6 +11,7 @@ in
         system = arch;
       };
       modules = [
+        ./configuration.nix
         ../../../profiles/wsl.nix
 
         inputs.nixos-wsl.nixosModules.default
