@@ -24,7 +24,8 @@ in
 
       ## Communication
       mumble
-      discord
+      # discord
+      vesktop
       element-desktop
 
       ## Other
