@@ -5,15 +5,12 @@
   ...
 }:
 with lib;
-let
-  inherit (pkgs) stdenv;
-in
 {
   users.users.yunix = {
     isNormalUser = true;
-    home = mkIf stdenv.isDarwin "/Users/yunix";
+    home = if pkgs.stdenv.isDarwin then "/Users/yunix" else "/home/yunix";
     description = "Yunix";
-    extraGroups = mkIf stdenv.isLinux [
+    extraGroups = mkIf pkgs.stdenv.isLinux [
       "libvirtd"
       "networkmanager"
       "video"
